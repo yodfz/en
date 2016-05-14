@@ -14,7 +14,6 @@
                 <li></li>
                 <li>
                     <xbutton types="default">登陆</xbutton>
-                    <!--<button>登陆</button>-->
                 </li>
             </ul>
         </section>
@@ -22,6 +21,7 @@
 </template>
 <script>
     import xbutton from 'vux-c/x-button';
+    import './style/login.less';
     export default {
         components: {
             xbutton

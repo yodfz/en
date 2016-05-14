@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import './style/touch.banners.less';
+    import './style/all.less';
 
     export default {};
 </script>
