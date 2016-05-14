@@ -3,7 +3,7 @@ import Vue from 'vue';
 import App from './App';
 import VueRouter from 'vue-router';
 // UI组件
-
+import Login from './Login';
 // 引用初始化
 Vue.use(VueRouter);
 Vue.use(require('vue-resource'));
@@ -16,8 +16,10 @@ var router = new VueRouter();
 // 创建的组件构造函数，也可以是一个组件选项对象。
 // 稍后我们会讲解嵌套路由
 router.map({
+    '/': {
+        component: Login
+    }
 });
-
 // 现在我们可以启动应用了！
 // 路由器会创建一个 App 实例，并且挂载到选择符 #app 匹配的元素上。
-router.start(App, '#app');
+router.start(App, 'app');
