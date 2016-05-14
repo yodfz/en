@@ -16,6 +16,8 @@
     "babel-runtime": "^6.0.0",
     "redux": "^3.5.2",
     "vue": "^1.0.21",
+    "vue-resource": "^0.7.0",
+    "vue-router": "^0.7.13",
     "vux": "0.0.117"
   },
   "devDependencies": {
