@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "babel-runtime": "^6.0.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
     "redux": "^3.5.2",
     "vue": "^1.0.21",
     "vue-resource": "^0.7.0",

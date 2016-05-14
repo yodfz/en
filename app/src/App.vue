@@ -3,9 +3,9 @@
 </template>
 
 <script>
-export default {
+    import './style/touch.banners.less';
 
-}
+    export default {};
 </script>
 
 <style>
