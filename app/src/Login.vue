@@ -1,7 +1,16 @@
 <template>
     <div class="login">
-        <section id="banners">
-
+        <section class="js-module-banner" id="js-module-banner">
+            <div class="bg clear">
+                <div class="bgNode" style="height:6rem;background-color: red;"></div>
+                <div class="bgNode" style="height:6rem;background-color: blue;"></div>
+                <div class="bgNode" style="height:6rem;background-color: green;"></div>
+            </div>
+            <div class="dots">
+                <!--<i class="dot active"></i>-->
+                <!--<i class="dot"></i>-->
+                <!--<i class="dot"></i>-->
+            </div>
         </section>
         <section id="login" class="loginBounds">
 
