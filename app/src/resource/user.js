@@ -2,10 +2,10 @@ import vue from 'vue';
 import config from '../config';
 
 export default {
-    login () {
-        vue.$http.post(config.user.login);
+    login (uid, pwd) {
+        return vue.$http.post(config.user.login, {uid, pwd});
     },
     getData () {
-        vue.$http.get(config.user.getData);
+        return vue.$http.get(config.user.getData);
     }
 };
