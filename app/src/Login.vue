@@ -16,13 +16,13 @@
 
         </section>
         <section id="loginInfo" class="loginBounds">
-            <ul>
-                <li>帐号:</li>
-                <li><input type="text" v-model="uid"></li>
-                <li>密码</li>
-                <li><input type="text" v-model="pwd"></li>
-                <li>
-                    <xbutton types="default">登陆</xbutton>
+            <ul class="clear">
+                <li style="width:15%">帐号:</li>
+                <li style="width:25%"><input type="text" v-model="uid" class="text01"></li>
+                <li style="width:15%">密码</li>
+                <li style="width:25%"><input type="text" v-model="pwd" class="text01"></li>
+                <li style="padding:0 10px 0 20px;">
+                    <xbutton types="default" @click="login">登陆</xbutton>
                 </li>
             </ul>
         </section>
