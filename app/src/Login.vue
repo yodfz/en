@@ -45,10 +45,19 @@
         methods: {
             login () {
                 let that = this;
+                if (!that.uid) {
+                    window.alert('请输入登陆帐号');
+                    return;
+                }
+                if (!that.pwd) {
+                    window.alert('请输入登陆密码');
+                    return;
+                }
+
                 userService.login(that.uid, that.pwd).then(_res=> {
                     if (_res.status === 200) {
                         that.$router.route.go('/main');
-                    }else{
+                    } else {
                         window.alert('登陆失败,失败原因:' + _res.data.error);
                     }
                 });
