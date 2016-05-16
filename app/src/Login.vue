@@ -28,7 +28,7 @@
         </section>
     </div>
 </template>
-<script>
+<script type="text/babel">
     import userService from './resource/user';
     import xbutton from 'vux-c/x-button';
     import './style/login.less';
@@ -44,6 +44,14 @@
         },
         methods: {
             login () {
+                let that = this;
+                userService.login(that.uid, that.pwd).then(_res=> {
+                    if (_res.status === 200) {
+                        that.$router.route.go('/main');
+                    }else{
+                        window.alert('登陆失败,失败原因:' + _res.data.error);
+                    }
+                });
             }
         }
     };
