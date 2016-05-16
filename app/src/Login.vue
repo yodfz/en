@@ -12,9 +12,6 @@
                 <!--<i class="dot"></i>-->
             </div>
         </section>
-        <section id="login" class="loginBounds">
-
-        </section>
         <section id="loginInfo" class="loginBounds">
             <ul class="clear">
                 <li style="width:15%">帐号:</li>
