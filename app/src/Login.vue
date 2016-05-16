@@ -62,6 +62,11 @@
                     }
                 });
             }
+        },
+        created () {
+        },
+        ready () {
+            window.touchBanner('#js-module-banner');
         }
     };
 </script>
