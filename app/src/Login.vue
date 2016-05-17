@@ -1,10 +1,10 @@
 <template>
     <div class="login">
-        <section class="js-module-banner" id="js-module-banner">
-            <div class="bg clear">
-                <div class="bgNode" style="height:6rem;background-color: red;"></div>
-                <div class="bgNode" style="height:6rem;background-color: blue;"></div>
-                <div class="bgNode" style="height:6rem;background-color: green;"></div>
+        <section class="js-module-banner" id="js-module-banner" style="height:{{screenHeight-loginBoundsHeight}}px">
+            <div class="bg clear" style="height:{{screenHeight-loginBoundsHeight}}px">
+                <div class="bgNode" style="height:{{screenHeight-loginBoundsHeight}}px;background-color: red;"></div>
+                <div class="bgNode" style="height:{{screenHeight-loginBoundsHeight}}px;background-color: blue;"></div>
+                <div class="bgNode" style="height:{{screenHeight-loginBoundsHeight}}px;background-color: green;"></div>
             </div>
             <div class="dots">
                 <!--<i class="dot active"></i>-->
@@ -33,7 +33,9 @@
         data () {
             return {
                 uid: '',
-                pwd: ''
+                pwd: '',
+                screenHeight: 0,
+                loginBoundsHeight: 90
             };
         },
         components: {
@@ -61,6 +63,8 @@
             }
         },
         created () {
+            let that = this;
+            that.screenHeight = Math.min(window.innerHeight, document.documentElement.clientHeight);
         },
         ready () {
             window.touchBanner('#js-module-banner');
