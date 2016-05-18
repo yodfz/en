@@ -4,6 +4,9 @@ import App from './App';
 import VueRouter from 'vue-router';
 // UI组件
 import Login from './Login';
+import square from './square';
+import courseList from './courseList';
+import courseDetail from './courseDetail';
 // 引用初始化
 Vue.use(VueRouter);
 Vue.use(require('vue-resource'));
@@ -18,6 +21,18 @@ var router = new VueRouter();
 router.map({
     '/': {
         component: Login
+    },
+    '/square': {
+        name: 'square',
+        component: square
+    },
+    '/courseList': {
+        name: 'courseList',
+        component: courseList
+    },
+    '/courseDetail': {
+        name: 'courseDetail',
+        component: courseDetail
     }
 });
 

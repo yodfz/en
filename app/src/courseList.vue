@@ -4,7 +4,7 @@
             <!--推荐内容-->
         </section>
         <ul class="list">
-            <li>
+            <li v-link="{path:'/courseDetail',query:{id:''}}">
                 <p class="date">2015-3-3</p>
                 <h3>这个只是一个标题,告诉你程序员要怎么写程序咯</h3>
                 <p class="des">网页可见区域宽： document.body.clientWidth
@@ -18,7 +18,11 @@
     </section>
 </template>
 <script>
-    export default {}
+    export default {
+        created () {
+
+        }
+    }
 </script>
 <style>
     .course .list li {
@@ -27,6 +31,8 @@
 
     .course .list .bfb {
         position: absolute;
+        right:.2rem;
+        top:.2rem;
         width:80px;
         height:80px;
         text-align: center;
